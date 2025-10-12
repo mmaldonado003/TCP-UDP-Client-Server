@@ -1,0 +1,11 @@
+Server waiting for client connections...
+Client ('128.83.130.151', 50650) connected.
+Received 57964 bytes from ('128.83.130.151', 50650) in 0.00s (188675.55 KB/s)
+('128.83.130.151', 50650) serviced.
+Client ('128.83.144.181', 33314) connected.
+Received 752583 bytes from ('128.83.144.181', 33314) in 0.01s (76342.03 KB/s)
+('128.83.144.181', 33314) serviced.
+Client ('128.83.144.122', 54038) connected.
+Received 3359405 bytes from ('128.83.144.122', 54038) in 0.04s (73600.29 KB/s)
+('128.83.144.122', 54038) serviced.
+Ctrl+C pressed. Server shutting down
