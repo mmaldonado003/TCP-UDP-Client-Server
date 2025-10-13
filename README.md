@@ -21,6 +21,9 @@ Linux machine (**key**) acting as the central receiver for all data transmission
 
 **Clients:**  
 Three UT CS lab machines accessed remotely via SSH and VPN to send specific books to server:
+<p align="center">
+  <img src="assets/Annotated Server and Clients Terminal.png" alt="Annotated Server and Clients Terminal" width="600">
+</p>
 
 - `agate` → *War and Peace*  
 - `diamond` → *Pride and Prejudice*  
