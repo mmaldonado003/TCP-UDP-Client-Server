@@ -126,10 +126,6 @@ Similarly:
 - Significant data loss due to packet drops and unordered delivery, as expected for a connectionless protocol.  
 - Multiple iteration variability provided tangible insight into real-world network unpredictability, even at a small scale.
 
-### Observed Findings
-
-These experiments reinforced theoretical knowledge of networking protocols through firsthand implementation, analysis, and comparison.
-
 ---
 
 ## Technical Skills Developed
