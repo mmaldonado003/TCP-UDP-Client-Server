@@ -32,7 +32,10 @@ Linux machine (`key`) acting as the central receiver for all data transmissions.
 **Remote Environment:**  
 - Connected securely through Cisco VPN and VS Code Remote Explorer / Remote SSH extensions.  
 - Allowed direct editing, execution, and monitoring of client and server code from an off-campus PC.
-
+  
+<p align="center">
+  <img src="assets/Annotated Server and Clients Terminal.png" alt="Annotated Server and Clients Terminal" width="800">
+</p>
 ---
 
 ## File Organization
