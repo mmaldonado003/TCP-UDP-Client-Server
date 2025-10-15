@@ -9,6 +9,15 @@ This project implements and compares TCP and UDP client–server architectures t
 
 ---
 
+## Methodology
+- Implemented using Python socket programming with `SOCK_STREAM` for TCP and `SOCK_DGRAM` for UDP  
+- Data transmitted in 2048-byte chunks using identical test procedures for both protocols  
+- Comprehensive logging captured:  
+  - Client-side and server-side metrics per iteration  
+  - Total bytes received, throughput (KB/s), and data loss percentage  
+- Each protocol was tested three times under identical network conditions to ensure consistency and comparability
+  
+---
 ## Setup
 
 **Server:**  
@@ -23,16 +32,6 @@ Linux machine (`key`) acting as the central receiver for all data transmissions.
 **Remote Environment:**  
 - Connected securely through Cisco VPN and VS Code Remote Explorer / Remote SSH extensions.  
 - Allowed direct editing, execution, and monitoring of client and server code from an off-campus PC.
-
----
-
-## Methodology
-- Implemented using Python socket programming with `SOCK_STREAM` for TCP and `SOCK_DGRAM` for UDP  
-- Data transmitted in 2048-byte chunks using identical test procedures for both protocols  
-- Comprehensive logging captured:  
-  - Client-side and server-side metrics per iteration  
-  - Total bytes received, throughput (KB/s), and data loss percentage  
-- Each protocol was tested three times under identical network conditions to ensure consistency and comparability
 
 ---
 
@@ -95,19 +94,19 @@ Similarly, `UDP_agate_War_iter1`, `UDP_received_books_iter1`, and `UDP_server_it
 ## Technical Analysis
 
 ### TCP Performance
-- Achieved 0% data loss across all tests, validating TCP’s reliability mechanisms (acknowledgments, retransmissions, congestion control).  
-- Throughput remained consistent between 70–80 KB/s, demonstrating stable and predictable performance.  
-- TCP’s reliable delivery made it ideal for applications requiring data integrity and complete file reconstruction.
+- 0% data loss across all tests, validating TCP’s reliability mechanisms (ACKs, retransmissions, congestion control).  
+- Throughput consistent at 70–80 KB/s, demonstrating stable performance.  
+- Ideal for applications requiring complete data integrity.
 
 ### UDP Performance
-- Demonstrated higher instantaneous throughput in short bursts (up to 334 KB/s) but significant packet loss between 1.8–9.9%.  
-- Unreliable delivery led to missing or out-of-order data chunks, highlighting the tradeoff between speed and reliability.  
-- Variation between iterations reflected real-world network volatility, even under controlled conditions.
+- Higher burst throughput (up to 334 KB/s) but packet loss of 1.8–9.9%.  
+- Missing or out-of-order chunks highlight tradeoff between speed and reliability.  
+- Variation between iterations reflects network volatility.
 
 ### Combined Insight
-- TCP provides stable, connection-oriented reliability at the cost of slightly higher overhead.  
-- UDP sacrifices reliability for speed and efficiency, suitable only for applications tolerating occasional data loss.  
-- Findings mirror enterprise network patterns, where protocol choice affects performance, data accuracy, and user experience.
+- TCP provides stable, connection-oriented reliability with predictable performance.  
+- UDP prioritizes speed over reliability, suitable for applications that can tolerate occasional data loss.  
+- Protocol choice affects application performance, data accuracy, and user experience significantly.
 
 ---
 
@@ -116,7 +115,7 @@ Similarly, `UDP_agate_War_iter1`, `UDP_received_books_iter1`, and `UDP_server_it
 ### Use TCP For Enterprise Workloads/Data
 - File transfers and backups — zero data loss required  
 - Database replication — data integrity critical  
-- Financial transactions — reliability non-negotiable  
+- Financial transactions — full integrity REQUIRED
 - Email and messaging systems — complete delivery expected  
 
 **Advantages:**  
@@ -128,7 +127,7 @@ Similarly, `UDP_agate_War_iter1`, `UDP_received_books_iter1`, and `UDP_server_it
 - Real-time streaming — video and VoIP where latency outweighs completeness  
 - Online gaming — interactive systems tolerating occasional loss  
 - DNS queries — lightweight, retryable network requests  
-- Network monitoring — sampling-based data collection (SNMP, NetFlow)  
+- Network monitoring — sampling-based data collection such as NetFlow
 
 **Trade-offs:**  
 - 1.8–9.9% data loss makes UDP unsuitable for critical workloads  
@@ -138,11 +137,10 @@ Similarly, `UDP_agate_War_iter1`, `UDP_received_books_iter1`, and `UDP_server_it
 ---
 
 ## Technical Skills Developed
-- TCP and UDP socket programming in Python  
-- Remote system administration using SSH and VS Code Remote Explorer  
-- Secure VPN-based access to distributed systems  
-- Data transmission logging, aggregation, and throughput analysis  
-- Real-world validation of transport-layer reliability principles
+- TCP & UDP socket programming in Python  
+- Remote Linux system administration via SSH and VPN  
+- Data logging, aggregation, and throughput analysis  
+- Practical validation of transport-layer reliability principles
 
 ---
 
