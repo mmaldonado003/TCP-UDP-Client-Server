@@ -34,9 +34,8 @@ Linux machine (`key`) acting as the central receiver for all data transmissions.
 - Allowed direct editing, execution, and monitoring of client and server code from an off-campus PC.
   
 <p align="center">
-  <img src="assets/Annotated Server and Clients Terminal.png" alt="Annotated Server and Clients Terminal" width="800">
+  <img src="assets/Annotated Server and Clients Terminal.png" alt="Annotated Server and Clients Terminal" width="1000">
 </p>
----
 
 ## File Organization
 Each protocol and iteration were stored in clearly structured folders for traceability.  
