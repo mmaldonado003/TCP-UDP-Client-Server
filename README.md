@@ -5,7 +5,7 @@
 ---
 
 ## Objective
-This project implements and compares TCP and UDP client–server architectures to analyze data reliability, throughput, and integrity across distributed systems. By conducting real-world file transfers between remote Linux machines, the project demonstrates key differences between reliable (TCP) and connectionless (UDP) transport protocols, which are foundational knowledge for designing efficient enterprise information systems.
+Conduct a performance study comparing TCP and UDP transport protocols using Python socket programming across Linux systems. By conducting real-world file transfers between remote Linux machines, the project demonstrates key differences between reliable (TCP) and connectionless (UDP) transport protocols.
 
 ---
 
@@ -93,7 +93,7 @@ Similarly, `UDP_agate_War_iter1`, `UDP_received_books_iter1`, and `UDP_server_it
 
 ---
 
-## Technical Analysis
+## Performance Analysis
 
 ### TCP Performance
 - 0% data loss across all tests, validating TCP’s reliability mechanisms (ACKs, retransmissions, congestion control).  
@@ -143,7 +143,14 @@ Similarly, `UDP_agate_War_iter1`, `UDP_received_books_iter1`, and `UDP_server_it
 - Remote Linux system administration via SSH and VPN  
 - Data logging, aggregation, and throughput analysis  
 - Practical validation of transport-layer reliability principles
+---
+## Relevance to Information Systems
 
+This analysis demonstrates skills applicable to:
+- **Network Infrastructure Planning** - Protocol selection for business systems
+- **IT Operations** - Capacity planning and SLA definition
+- **Business Analysis** - Data-driven technology decisions
+- **Systems Administration** - Performance benchmarking and optimization
 ---
 
 ## Technical Details
