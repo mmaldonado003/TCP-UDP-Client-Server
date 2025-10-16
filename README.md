@@ -146,7 +146,7 @@ Similarly, `UDP_agate_War_iter1`, `UDP_received_books_iter1`, and `UDP_server_it
 ---
 ## Relevance to Information Systems
 
-This analysis demonstrates skills applicable to:
+Technical skills developed applicable to:
 - **Network Infrastructure Planning** - Protocol selection for business systems
 - **IT Operations** - Capacity planning and SLA definition
 - **Business Analysis** - Data-driven technology decisions
