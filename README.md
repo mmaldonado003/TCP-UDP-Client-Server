@@ -101,7 +101,7 @@ Similarly, `UDP_agate_War_iter1`, `UDP_received_books_iter1`, and `UDP_server_it
 - Ideal for applications requiring complete data integrity.
 
 ### UDP Performance
-- Higher burst throughput (up to 334 KB/s) but packet loss of 1.8–9.9%.  
+- Higher burst throughput (up to 334 KB/s) but packet loss of 1.8–10.3%.  
 - Missing or out-of-order chunks highlight tradeoff between speed and reliability.  
 - Variation between iterations reflects network volatility.
 
@@ -132,7 +132,7 @@ Similarly, `UDP_agate_War_iter1`, `UDP_received_books_iter1`, and `UDP_server_it
 - Network monitoring — sampling-based data collection such as NetFlow
 
 **Trade-offs:**  
-- 1.8–9.9% data loss makes UDP unsuitable for critical workloads  
+- 1.8–10.3% data loss makes UDP unsuitable for critical workloads  
 - Highly variable throughput (47–334 KB/s) depending on network conditions  
 - Requires application-level reliability if completeness is needed
 
@@ -154,4 +154,4 @@ Technical skills developed applicable to:
 ---
 
 ## Technical Details
-Python 3.x | socket, threading, time | UT CS lab infrastructure | Cisco VPN + SSH access
+Python 3.x | socket, threading | UT CS lab infrastructure | Cisco VPN + SSH access
