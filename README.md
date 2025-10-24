@@ -75,7 +75,7 @@ Similarly, `UDP_agate_War_iter1`, `UDP_received_books_iter1`, and `UDP_server_it
 |-----------|----------------------------|----------------------------|----------------------|------------|
 | 1         | 3,846,368                  | 75,603                     | 57.46                | 7.6%       |
 | 2         | 4,098,272                  | 80,378                     | 334.13               | 1.8%       |
-| 3         | 3,739,187                  | 73,710                     | 47.59                | 9.9%       |
+| 3         | 3,739,187                  | 73,710                     | 47.59                | 10.3%       |
 
 **Key Finding:** Variable reliability (1.8–9.9% loss), unpredictable throughput (47–334 KB/s).  
 **Note:** Iteration 2 showed a short-term throughput spike due to favorable network conditions, demonstrating UDP’s sensitivity to network congestion.
