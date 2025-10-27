@@ -144,14 +144,6 @@ Similarly, `UDP_agate_War_iter1`, `UDP_received_books_iter1`, and `UDP_server_it
 - Data logging, aggregation, and throughput analysis  
 - Practical validation of transport-layer reliability principles
 ---
-## Relevance to Information Systems
-
-Technical skills developed applicable to:
-- **Network Infrastructure Planning** - Protocol selection for business systems
-- **IT Operations** - Capacity planning and SLA definition
-- **Business Analysis** - Data-driven technology decisions
-- **Systems Administration** - Performance benchmarking and optimization
----
 
 ## Technical Details
 Python 3.x | socket, threading | UT CS lab infrastructure | Cisco VPN + SSH access
